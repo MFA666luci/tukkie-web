@@ -1,0 +1,543 @@
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+# TUKKIE — Getuk Singkong Goreng
+
+**Version:** 1.1  
+**Product Type:** E-Commerce Landing Page  
+**Platform:** Website (Responsive)  
+**Tech Stack:** Next.js  
+**Primary Ordering Method:** WhatsApp  
+**Language:** Indonesian  
+**Status:** Product Planning
+
+---
+
+## 1. Product Overview
+
+### 1.1 Deskripsi Produk
+
+Tukkie merupakan brand toko online yang berfokus pada penjualan makanan tradisional Indonesia, dengan produk utama berupa Getuk Singkong Goreng.
+
+Website Tukkie dirancang sebagai landing page toko online yang menggabungkan identitas makanan tradisional dengan desain modern, menarik, dan mudah digunakan.
+
+Pengunjung dapat melihat informasi brand, mengenal produk, melihat galeri foto, mengetahui harga, dan melakukan pemesanan secara langsung melalui WhatsApp.
+
+Website tidak menyediakan sistem checkout atau pembayaran internal. Seluruh proses pemesanan dilakukan melalui WhatsApp.
+
+### 1.2 Visi Produk
+
+Membangun identitas digital Tukkie sebagai brand makanan tradisional yang modern, menarik, mudah dikenali, dan mudah dijangkau oleh pelanggan melalui platform online.
+
+### 1.3 Tujuan Website
+
+1. Memperkenalkan brand Tukkie kepada calon pelanggan.
+2. Menampilkan produk Getuk Singkong Goreng secara menarik.
+3. Menyediakan informasi produk dan harga secara jelas.
+4. Mempermudah pelanggan melakukan pemesanan.
+5. Membangun identitas visual brand yang konsisten.
+6. Mengarahkan pengunjung untuk melakukan transaksi melalui WhatsApp.
+
+---
+
+## 2. Target Audience
+
+| Target | Karakteristik |
+|---|---|
+| Remaja | Tertarik mencoba camilan unik dan menarik. |
+| Mahasiswa | Mencari camilan dengan harga terjangkau. |
+| Keluarga | Membeli makanan ringan untuk dinikmati bersama. |
+| Pecinta kuliner | Menyukai makanan tradisional Indonesia. |
+| Pelanggan online | Terbiasa memesan produk melalui WhatsApp. |
+
+**Target utama:** Pengguna smartphone yang ingin membeli camilan tradisional secara praktis.
+
+---
+
+## 3. Brand Identity & Design System
+
+### 3.1 Identitas Visual
+
+Konsep desain Tukkie adalah **Modern Traditional Food Branding**, yaitu menggabungkan nuansa makanan tradisional dengan desain website modern yang bersih, hangat, dan memiliki karakter visual kuat.
+
+### 3.2 Color Palette
+
+Warna utama menggunakan kombinasi ungu dan krem.
+
+| Color | Hex Code | Penggunaan |
+|---|---|---|
+| Primary Purple | `#70438B` | Warna utama brand, tombol, navigasi. |
+| Cream | `#F5EBD8` | Background utama website. |
+| Dark Plum | `#3D293E` | Teks utama dan footer. |
+| Golden Accent | `#D9A65A` | Aksen dekoratif dan elemen produk. |
+
+### 3.3 Typography
+
+- **Heading:** Playfair Display.
+- **Body:** Poppins.
+- **Button:** Poppins SemiBold.
+
+### 3.4 Design Direction
+
+- Modern dan minimalis.
+- Menggunakan rounded corners pada card dan tombol.
+- Foto produk menjadi fokus utama.
+- Menggunakan whitespace yang cukup.
+- Ilustrasi dekoratif bertema singkong dan makanan tradisional.
+- Animasi ringan ketika pengguna melakukan scroll.
+- Konsistensi warna ungu dan krem pada seluruh section.
+- Mobile-first responsive design.
+
+---
+
+## 4. Website Structure
+
+Website Tukkie menggunakan konsep **Single Page Landing Page**.
+
+### 4.1 Sitemap
+
+Urutan section website:
+
+1. Navbar
+2. Hero Section
+3. About Tukkie
+4. Product Section
+5. Why Choose Tukkie
+6. Gallery Section
+7. CTA Section
+8. Footer
+
+Setiap section disusun secara berurutan dalam satu halaman utama.
+
+---
+
+## 5. Functional Requirements
+
+### 5.1 Navigation Bar
+
+**Tujuan:** Mempermudah pengunjung menjelajahi website.
+
+**Komponen:**
+- Logo Tukkie.
+- Home.
+- Tentang Kami.
+- Produk.
+- Galeri.
+- Tombol Pesan Sekarang.
+
+**Functional Requirements:**
+- Navbar berada di bagian atas website.
+- Menggunakan sticky navigation saat pengguna melakukan scroll.
+- Setiap menu mengarah ke section terkait.
+- Tombol Pesan Sekarang membuka WhatsApp.
+- Tampilan mobile menggunakan hamburger menu.
+
+### 5.2 Hero Section
+
+**Tujuan:** Memberikan kesan pertama yang menarik kepada pengunjung.
+
+**Konten:**
+- Headline: "Nikmatnya Tradisi dalam Setiap Gigitan."
+- Deskripsi singkat mengenai Getuk Singkong Goreng Tukkie.
+- Tombol "Pesan Sekarang".
+- Tombol "Lihat Produk".
+- Foto produk berukuran besar.
+- Elemen dekoratif singkong atau ilustrasi getuk.
+
+**Functional Requirements:**
+- CTA WhatsApp mengarah ke nomor resmi penjual.
+- Tombol Lihat Produk melakukan scroll ke Product Section.
+- Foto produk harus memiliki kualitas tinggi.
+- Layout menyesuaikan ukuran perangkat.
+
+### 5.3 About Section
+
+**Tujuan:** Memperkenalkan Tukkie kepada pelanggan.
+
+**Konten:**
+- Judul: "Cerita di Balik Tukkie".
+- Deskripsi singkat brand.
+- Foto produk atau proses pembuatan.
+- Penjelasan mengenai makanan tradisional getuk.
+
+**Contoh Deskripsi:**
+
+"Tukkie hadir membawa cita rasa camilan tradisional Indonesia melalui Getuk Singkong Goreng yang nikmat. Kami ingin menghadirkan pengalaman menikmati makanan tradisional dengan cara yang lebih praktis dan modern."
+
+### 5.4 Product Section
+
+**Tujuan:** Menampilkan informasi produk yang dijual.
+
+**Informasi Produk:**
+
+| Informasi | Detail |
+|---|---|
+| Nama | Getuk Singkong Goreng |
+| Kategori | Makanan tradisional |
+| Harga | Rp5.000/porsi |
+| Deskripsi | Belum ditentukan |
+| Varian | Belum ditentukan |
+| Kemasan | Belum ditentukan |
+
+**Komponen Product Card:**
+- Foto produk.
+- Nama produk.
+- Deskripsi singkat.
+- Harga.
+- Tombol Pesan via WhatsApp.
+
+**Functional Requirements:**
+- Menampilkan informasi produk secara jelas.
+- Tombol pemesanan mengarahkan pengunjung ke WhatsApp.
+- Informasi produk mudah diperbarui melalui data produk.
+
+### 5.5 Why Choose Tukkie
+
+**Tujuan:** Menjelaskan alasan pelanggan memilih produk Tukkie.
+
+**Rekomendasi Konten:**
+- Cita rasa tradisional.
+- Produk berbahan dasar singkong.
+- Camilan untuk berbagai suasana.
+- Pemesanan praktis melalui WhatsApp.
+
+**Design Requirements:**
+- Menggunakan icon atau ilustrasi sederhana.
+- Layout berupa card atau grid.
+- Setiap keunggulan memiliki judul dan deskripsi singkat.
+- Menggunakan warna utama brand.
+
+Catatan: Klaim mengenai kualitas bahan, proses pembuatan, dan kesegaran harus disesuaikan dengan kondisi produk sebenarnya.
+
+### 5.6 Gallery Section
+
+**Tujuan:** Memberikan gambaran visual produk kepada calon pelanggan.
+
+**Konten:**
+- Foto Getuk Singkong Goreng.
+- Foto produk dari berbagai sudut.
+- Foto penyajian.
+- Foto kemasan apabila sudah tersedia.
+
+**Functional Requirements:**
+- Menggunakan responsive image grid.
+- Foto memiliki kualitas tinggi.
+- Menggunakan efek hover ringan.
+- Mendukung tampilan mobile dan desktop.
+
+### 5.7 CTA Section
+
+**Tujuan:** Mendorong pengunjung untuk melakukan pemesanan.
+
+**Konten:**
+- Headline: "Yuk, Nikmati Getuk Tukkie!"
+- Deskripsi singkat.
+- Tombol "Pesan Sekarang via WhatsApp".
+
+**Functional Requirements:**
+- Tombol mengarah ke WhatsApp resmi penjual.
+- Menggunakan pesan otomatis.
+- Memiliki tampilan yang menonjol dengan warna ungu.
+- Responsif untuk seluruh perangkat.
+
+### 5.8 Footer
+
+**Tujuan:** Menyediakan informasi tambahan mengenai brand.
+
+**Konten:**
+- Logo Tukkie.
+- Deskripsi singkat brand.
+- Navigasi website.
+- Informasi kontak.
+- Tautan WhatsApp.
+- Lokasi penjualan jika tersedia.
+- Copyright.
+
+**Functional Requirements:**
+- Seluruh tautan dapat digunakan.
+- Nomor WhatsApp dapat diklik.
+- Layout menyesuaikan ukuran layar.
+
+---
+
+## 6. WhatsApp Ordering System
+
+**Prioritas: Critical**
+
+WhatsApp merupakan satu-satunya saluran pemesanan produk Tukkie.
+
+### 6.1 Konsep Pemesanan
+
+Pengunjung dapat melakukan pemesanan tanpa harus membuat akun atau menggunakan checkout internal.
+
+### 6.2 Alur Pemesanan
+
+1. Pengunjung membuka website Tukkie.
+2. Pengunjung melihat informasi produk.
+3. Pengunjung menekan tombol Pesan Sekarang.
+4. Website membuka WhatsApp.
+5. Pesan otomatis ditampilkan.
+6. Pengunjung mengirim pesan kepada penjual.
+7. Penjual melanjutkan proses pemesanan.
+
+### 6.3 Contoh Pesan Otomatis
+
+Halo Tukkie! Saya ingin memesan produk:
+
+- Produk: Getuk Singkong Goreng
+- Harga: Rp5.000/porsi
+- Jumlah:
+
+Mohon informasi lebih lanjut mengenai pemesanan. Terima kasih!
+
+### 6.4 Implementasi Teknis
+
+```typescript
+const phoneNumber = "628XXXXXXXXXX";
+
+const message = `
+Halo Tukkie! Saya ingin memesan:
+
+Produk: Getuk Singkong Goreng
+Harga: Rp5.000/porsi
+
+Mohon informasi lebih lanjut.
+`;
+
+const whatsappURL =
+  `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+window.open(whatsappURL, "_blank");
+```
+
+**Catatan:** Nomor WhatsApp harus diganti dengan nomor resmi penjual menggunakan format internasional tanpa tanda `+`, spasi, atau angka nol di awal.
+
+---
+
+## 7. User Experience (UX) Requirements
+
+| ID | Requirement | Priority |
+|---|---|---|
+| UX-01 | Navigasi mudah dipahami | High |
+| UX-02 | CTA WhatsApp mudah ditemukan | Critical |
+| UX-03 | Website responsif | Critical |
+| UX-04 | Informasi harga jelas | High |
+| UX-05 | Foto produk berkualitas | High |
+| UX-06 | Animasi tidak mengganggu | Medium |
+| UX-07 | Loading website cepat | High |
+| UX-08 | Tampilan konsisten | High |
+
+---
+
+## 8. Technical Requirements
+
+### 8.1 Tech Stack
+
+| Technology | Fungsi |
+|---|---|
+| Next.js | Framework utama frontend dan routing. |
+| React | Komponen dan interaktivitas UI. |
+| TypeScript | Type safety dan struktur kode. |
+| Tailwind CSS | Styling dan responsive layout. |
+| Lucide React | Ikon navigasi dan elemen UI. |
+| Vercel | Deployment dan hosting. |
+
+### 8.2 Architecture
+
+Website menggunakan arsitektur frontend sederhana berbasis Next.js App Router.
+
+- Next.js App Router untuk routing.
+- React Components untuk membangun UI.
+- Tailwind CSS untuk styling.
+- Client-side interaction untuk navigasi dan interaksi UI.
+- WhatsApp Click-to-Chat API untuk pemesanan.
+- Static rendering untuk konten landing page.
+
+**Database:** Tidak diperlukan untuk MVP karena website belum memiliki sistem akun, checkout, maupun penyimpanan transaksi.
+
+### 8.3 Folder Structure
+
+```text
+tukkie/
+│
+├── public/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── hero-product.webp
+│   │   ├── getuk-1.webp
+│   │   └── gallery/
+│   │
+│   └── icons/
+│
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   │
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Product.tsx
+│   │   ├── Features.tsx
+│   │   ├── Gallery.tsx
+│   │   ├── CTA.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── data/
+│   │   └── products.ts
+│   │
+│   └── lib/
+│       └── whatsapp.ts
+│
+├── package.json
+└── tsconfig.json
+```
+
+---
+
+## 9. Non-Functional Requirements
+
+| Kategori | Requirement |
+|---|---|
+| Performance | Optimasi gambar dan pemuatan halaman. |
+| Responsive | Mendukung mobile, tablet, dan desktop. |
+| SEO | Metadata, title, description, semantic HTML. |
+| Accessibility | Kontras warna dan alt text gambar. |
+| Security | HTTPS dan tidak menyimpan data sensitif pelanggan. |
+| Browser | Chrome, Edge, Firefox, dan Safari. |
+| Maintainability | Komponen modular dan kode terstruktur. |
+
+---
+
+## 10. SEO Requirements
+
+Website perlu dioptimalkan agar mudah ditemukan melalui mesin pencari.
+
+**Target Keywords:**
+- Getuk Singkong Goreng.
+- Jual Getuk Goreng.
+- Camilan Tradisional Indonesia.
+- Tukkie.
+- Getuk Singkong.
+
+### Contoh Metadata
+
+```typescript
+export const metadata = {
+  title: "Tukkie | Getuk Singkong Goreng",
+  description:
+    "Nikmati Getuk Singkong Goreng Tukkie. Pesan camilan tradisional favoritmu dengan mudah melalui WhatsApp.",
+};
+```
+
+---
+
+## 11. MVP Scope
+
+Versi pertama website difokuskan pada fitur-fitur utama agar dapat segera dipublikasikan.
+
+| Fitur | MVP |
+|---|---|
+| Navbar | Wajib |
+| Hero Section | Wajib |
+| About Section | Wajib |
+| Product Section | Wajib |
+| WhatsApp Ordering | Wajib |
+| Why Choose Tukkie | Wajib |
+| Gallery | Wajib |
+| CTA Section | Wajib |
+| Footer | Wajib |
+| Animasi kompleks | Opsional |
+| Dashboard Admin | Future |
+| Online Payment | Future |
+| Shopping Cart | Future |
+
+**Batasan MVP:**
+- Tidak ada sistem registrasi atau login.
+- Tidak ada shopping cart internal.
+- Tidak ada checkout internal.
+- Tidak ada payment gateway.
+- Tidak ada database transaksi.
+- Tidak ada dashboard admin.
+
+---
+
+## 12. Development Roadmap
+
+### Phase 1 — Planning & Setup
+- Menyiapkan project Next.js.
+- Menentukan design system.
+- Menyiapkan struktur folder.
+- Menyiapkan aset visual.
+
+### Phase 2 — UI Development
+- Membuat Navbar dan Hero.
+- Membuat About dan Product.
+- Membuat Why Choose Tukkie.
+- Membuat Gallery.
+- Membuat CTA dan Footer.
+
+### Phase 3 — Functionality
+- Integrasi WhatsApp.
+- Navigasi antar-section.
+- Implementasi hamburger menu.
+- Responsive design.
+
+### Phase 4 — Optimization
+- Optimasi gambar.
+- SEO.
+- Testing responsive.
+- Testing WhatsApp.
+- Memperbaiki bug.
+
+### Phase 5 — Deployment
+- Deploy ke Vercel.
+- Konfigurasi domain.
+- Final testing.
+- Website siap dipublikasikan.
+
+---
+
+## 13. Success Metrics
+
+Indikator keberhasilan website Tukkie:
+
+1. Semua tombol pemesanan berhasil membuka WhatsApp.
+2. Pengunjung dapat memahami produk dan harga dengan mudah.
+3. Website dapat digunakan dengan baik di smartphone.
+4. Seluruh section dapat diakses tanpa error.
+5. Gambar dan konten tampil dengan baik.
+6. Website memiliki performa yang baik.
+7. Website mampu mengarahkan pengunjung menjadi calon pembeli melalui WhatsApp.
+
+---
+
+## 14. Future Development
+
+Pengembangan berikutnya dapat mencakup:
+
+- Dashboard admin untuk mengelola produk.
+- Pengelolaan beberapa varian produk.
+- Sistem katalog produk yang lebih lengkap.
+- Fitur promosi dan diskon.
+- Integrasi Google Maps.
+- Analitik klik tombol WhatsApp.
+- Sistem checkout dan pembayaran online apabila dibutuhkan.
+
+Fitur tersebut tidak termasuk dalam MVP awal.
+
+---
+
+## 15. Project Conclusion
+
+Tukkie akan dibangun sebagai landing page e-commerce sederhana berbasis Next.js dengan identitas visual ungu dan krem.
+
+Fokus utama website adalah memperkenalkan brand, menampilkan Getuk Singkong Goreng secara menarik, memberikan informasi produk yang jelas, dan mengarahkan calon pelanggan untuk melakukan pemesanan melalui WhatsApp.
+
+Dengan menghilangkan fitur yang tidak esensial, website dapat dikembangkan secara lebih sederhana, ringan, responsif, dan efisien.
+
+**Core Principle:**
+
+> Simple Website, Strong Branding, Delicious Product, Easy Ordering.
+
+**End of Document — PRD Tukkie v1.1**
