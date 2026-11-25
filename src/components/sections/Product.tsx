@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Check, Minus, Plus } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -9,7 +8,6 @@ import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { featuredProduct } from "@/data/products";
 import { formatRupiah } from "@/lib/format";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
-import { asset } from "@/lib/site-url";
 
 export function Product() {
   const [qty, setQty] = useState(1);
@@ -34,17 +32,18 @@ export function Product() {
 
         <Reveal delay={100} className="mt-10 sm:mt-14">
           <div className="mx-auto grid max-w-4xl overflow-hidden rounded-[2rem] bg-cream-50 shadow-lift ring-1 ring-plum-900/5 md:grid-cols-[0.9fr_1fr]">
-            <div className="relative min-h-72 overflow-hidden bg-cream-100 sm:min-h-96 md:min-h-full">
-              <Image
-                src={asset(featuredProduct.image)}
-                alt={featuredProduct.imageAlt}
-                fill
-                sizes="(min-width: 768px) 40vw, 92vw"
-                className="object-cover"
-              />
-              <span className="absolute left-4 top-4 rounded-pill bg-cream-50/90 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-plum-600 backdrop-blur">
-                {featuredProduct.category}
-              </span>
+            <div className="relative flex min-h-72 items-center justify-center overflow-hidden bg-plum-900 sm:min-h-96 md:min-h-full">
+              <div className="aspect-video w-full">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/_h4OSzcF344"
+                  title="Video Getuk Goreng Tukkie"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  loading="lazy"
+                  className="size-full border-0"
+                />
+              </div>
             </div>
 
             <div className="flex flex-col p-6 sm:p-8 lg:p-10">
